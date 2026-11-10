@@ -11,12 +11,15 @@ Both quantities are intermediate inputs to the paper's $5$-Selmer computation.
 
 ## Run the examples
 
-Install SageMath and run the commands from the directory containing the scripts. The commands below use the filename `elliptic_cm_minus11.sage` for the ordinary script. Substitute its existing filename if it differs.
+Open a terminal in the repository folder and run the scripts with SageMath.
 
 ```bash
-sage --version
-sage elliptic_cm_minus11.sage
-sage -python elliptic_cm_minus98.py
+sage "5 selmer rank E9.d.sage"
+sage "5 Selmer rank E6.d.sage"
+```
+
+- [E9 ordinary case](./5%20selmer%20rank%20E9.d.sage)
+- [E6 supersingular case](./5%20Selmer%20rank%20E6.d.sage)
 ```
 
 The ordinary script uses Sage syntax such as `K.<a>` and needs Sage's preparser. The [supersingular Python script](./elliptic_cm_minus98.py) imports `sage.all` and runs with Sage's Python interpreter. If your supersingular file uses Sage syntax, run it with `sage your_file.sage`.
