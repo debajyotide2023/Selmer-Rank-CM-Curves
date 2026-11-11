@@ -35,7 +35,7 @@ The example sets `d = -14`, corresponding to fundamental discriminant $D=-56$. O
 \gamma^2=d^3(\beta^3-9504\beta+365904).
 ```
 
-The point on the twisted model is $P=(d\beta,\gamma)$. The script constructs $L_d=K(\beta,\gamma)$ from this point and selects the automorphism $\tau$ fixing $K$ that acts as $\tau(P)=2P$. It does this by matching both coordinates of $2P$. For this example the field degrees are $[F:K]=2$, $[L_d:F]=2$, and $[L_d:\mathbf Q]=8$.
+The point on the twisted model is $P=(d\beta,\gamma)$. The script constructs $L_d=K(\beta,\gamma)$ from this point and selects the automorphism $\tau$ fixing $K$ that acts as $\tau(P)=2P$. It does this by requiring $\tau(\beta)=-b_1-\beta$ and $\tau(\gamma)=c\gamma$, using the prescribed formulas for the coordinates of $2P$. For this example the field degrees are $[F:K]=2$, $[L_d:F]=2$, and $[L_d:\mathbf Q]=8$.
 
 The script builds the matrix $T$ of the forward ideal-class action $[I]\mapsto[\tau(I)]$ on $\mathrm{Cl}(L_d)[5]$. The line `dim Cl(L_d)(chi_d)` reports
 
