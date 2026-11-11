@@ -40,7 +40,7 @@ The point on the twisted model is $P=(d\beta,\gamma)$. The script constructs $L_
 The script builds the matrix $T$ of the forward ideal-class action $[I]\mapsto[\tau(I)]$ on $\mathrm{Cl}(L_d)[5]$. The line `dim Cl(L_d)(chi_d)` reports
 
 ```math
-\dim_{\mathbf F_5}\ker(T-2I),
+\dim_{\mathbb{F}_5}\ker(T-2I),
 ```
 
 the dimension of the component for the character normalized by $\chi_d(\tau)=2$. The two values under `Check K embedding` should be `-11` and `0`. The gamma relation, the check that $\tau$ fixes $\sqrt{-11}$, and the matrix check $T^4=I$ should each print `True`.
