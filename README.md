@@ -57,8 +57,7 @@ The E6 script sets `d = 2` for the twist with fundamental discriminant $D=8$. Se
 
 For this example, the expected field degrees are $[F:K]=12$, $[L:F]=2$, and $[L:\mathbf Q]=48$. The defining-polynomial checks at $\beta$, and the selected division-polynomial factor evaluated at $\beta_1$, should all print 0. should print `0`, and both `5P` and `5P1` should print the point at infinity, `(0 : 1 : 0)`.
 
-Here `Multiplicity e` is the exponent of the irreducible polynomial $m(x)=x^2-x+2$ in the characteristic polynomial of $T$ over $\mathbb{F}_5$. The action of $T$ has order dividing $24$, which is coprime to $5$. The corresponding component is $\ker(T^2-T+2I)$ and has $\mathbf F_5$-dimension $2e$. Equivalently, after extending scalars to $\mathbf F_{25}$, the character eigenspace normalized by $\chi_d(\tau)=\bar\omega$ has dimension $e$ over $\mathbb{F}_{25}$.
-
+Here `Multiplicity e` is the exponent of the irreducible polynomial $m(x)=x^2-x+2$ in the characteristic polynomial of $T$ over $\mathbb{F}_5$. The action of $T$ has order dividing $24$, which is coprime to $5$. The corresponding component is $\ker(T^2-T+2I)$ and has $\mathbf F_5$-dimension $2e$. 
 
 ## Twist parameter conventions
 
