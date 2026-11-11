@@ -55,15 +55,16 @@ E_6\colon y^2=x^3-35x-98.
 
 The E6 script sets `d = 2` for the twist with fundamental discriminant $D=8$. Set `d = 1` to run the base model. Over $K=\mathbf Q(\sqrt{-7})$, the script constructs the $5$-division field by adjoining the coordinates of a nonzero point $P$ of order $5$. For $\omega=(1+\sqrt{-7})/2$, it selects the automorphism $\tau$ fixing $K$ that sends $P$ to $[\omega]P$.
 
-For this example, the expected field degrees are $[F:K]=12$, $[L:F]=2$, and $[L:\mathbf Q]=48$. The two division-polynomial evaluations should print `0`, and both `5P` and `5P1` should print the point at infinity, `(0 : 1 : 0)`.
+For this example, the expected field degrees are $[F:K]=12$, $[L:F]=2$, and $[L:\mathbf Q]=48$. The defining-polynomial checks at $\beta$, and the selected division-polynomial factor evaluated at $\beta_1$, should all print 0. should print `0`, and both `5P` and `5P1` should print the point at infinity, `(0 : 1 : 0)`.
 
-Here `Multiplicity e` is the exponent of the irreducible polynomial $m(x)=x^2-x+2$ in the characteristic polynomial of $T$ over $\mathbf F_5$. The action of $T$ has order dividing $24$, which is coprime to $5$. The corresponding component is $\ker(T^2-T+2I)$ and has $\mathbf F_5$-dimension $2e$.
+Here `Multiplicity e` is the exponent of the irreducible polynomial $m(x)=x^2-x+2$ in the characteristic polynomial of $T$ over $\mathbb{F}_5$. The action of $T$ has order dividing $24$, which is coprime to $5$. The corresponding component is $\ker(T^2-T+2I)$ and has $\mathbb{F}_5$-dimension $2e$. Equivalently, after extending scalars to $\mathbb{F}_{25}$, the character eigenspace normalized by $\chi_d(\tau)=\bar\omega$ has dimension $e$ over $\mathbb{F}_{25}$.
+
 
 ## Twist parameter conventions
 
 The paper indexes twists by fundamental discriminants $D$ with $5\nmid D$. In the scripts, the squarefree twist parameter is $d=D$ when $D\equiv1\pmod4$ and $d=D/4$ when $4\mid D$. The short model of a twist of $y^2=x^3+Ax+B$ is $y^2=x^3+Ad^2x+Bd^3$.
 
-For the ordinary script, `d` is already an input near the top of the file. For the supersingular script, a change of `d` affects both the coefficients and the CM formula. For the $-98$ model, set $r=\omega^2-2$ and $C_\omega=7(1-\omega)^4$. The formulas on the twisted model are
+For the ordinary script, `d` is already an input near the top of the file. For the supersingular script, a change of `d` affects both the coefficients and the CM formula. For this elliptic curve model, set $r=\omega^2-2$ and $C_\omega=7(1-\omega)^4$. The formulas on the twisted model are
 
 ```math
 q=\beta-dr,\qquad
